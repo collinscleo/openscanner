@@ -65,7 +65,7 @@ def menu():
         else:
                 input("\nInvalid option. Press ENTER...")
 
-def email_scanner:
+def email_scanner():
 	clear()
 	show_banner()
 	email_exists_counter = 0
@@ -85,8 +85,6 @@ def email_scanner:
 		"education": [],
 		"adult": []
 	}
-
-
 
 
 

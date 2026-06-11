@@ -1,5 +1,6 @@
 import os
 from usernameSearch import username_scanner_main
+from emailSearch import email_scanner
 
 def clear():
 	os.system("clear")
@@ -34,7 +35,7 @@ def menu():
 
 	elif choice == "2":
 		clear()
-		email_search()
+		email_scanner()
 
 	elif choice == "3":
 		clear()
