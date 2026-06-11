@@ -1,6 +1,7 @@
 import os
 import requests
 from usernameSearchSites import SITES
+from advancedUsernameSearch import advanced_username_scanner_main
 from colours import colours
 from datetime import datetime
 
@@ -47,7 +48,7 @@ def show_menu():
 	print("|  (1) - Normal Search                     |")
 	print("|  (2) - Search by Category                |")
 #	print("|  (3) - Search by Website                 |")
-	print("|  (3) - Variation Search                  |")
+	print("|  (3) - Advanced  Scan                    |")
 	print("|  (4) - Help                              |")
 	print()
 
@@ -63,7 +64,8 @@ def menu():
 		category_search()
 
 	elif choice =="3":
-		variation_search()
+		clear()
+		advanced_username_scanner_main()
 
 	elif choice == "4":
 		clear()
