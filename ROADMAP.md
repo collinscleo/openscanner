@@ -10,17 +10,18 @@ Focus: Core functionality, stability, and usability.
 
 ## Username Intelligence
 - [ ] Search usernames across hundreds of websites
-- [ ] Categorize results (Social, Gaming, Development, Forums, etc.)
-- [ ] Color-coded output
-- [ ] Display profile URLs
+- [✓] Categorize results (Social, Gaming, Development, Forums, etc.)
+- [✓] Color-coded output
+- [✓] Display profile URLs
 - [ ] JSON export
 - [ ] CSV export
-- [ ] Save scan results locally
+- [✓] TXT export
+- [✓] Save scan results locally
 - [ ] Scan history
 
 ## User Interface
-- [ ] Interactive terminal menu
-- [ ] ASCII startup banner
+- [✓] Interactive terminal menu
+- [✓] ASCII startup banner
 - [ ] Progress bars
 - [ ] Scan statistics
 - [ ] Error handling and logging
