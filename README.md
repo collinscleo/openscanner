@@ -3,8 +3,7 @@
 
 Prerequasites
 
-Please install: XposedOrNot
-Please install: phonenumbers
+Please install: XposedOrNot, phonenumbers
 
 Create and activate the virtual environment
 
