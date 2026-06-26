@@ -8,7 +8,7 @@ SITES = {
     "Twitch": {"url": "https://www.twitch.tv/{}", "category": "social"},
     "X (Twitter)": {"url": "https://x.com/{}", "category": "social"},
     "Instagram": {"url": "https://www.instagram.com/{}", "category": "social"},
-    "Facebook": {"url": "https://www.facebook.com/{}", "category": "social"},
+    "Facebook": {"url": "https://www.facebook.com/{}", "category": "social"},  #FLAGED FOR GETTING 200 ON ANOTHER SITE
     "TikTok": {"url": "https://www.tiktok.com/@{}", "category": "social"},
     "Snapchat": {"url": "https://www.snapchat.com/@{}", "category": "social"},
     "Pinterest": {"url": "https://www.pinterest.com/{}", "category": "social"},
@@ -18,20 +18,21 @@ SITES = {
     "Bluesky": {"url": "https://bsky.app/profile/{}", "category": "social"},
     "TruthSocial": {"url": "https://truthsocial.com/@{}", "category": "social"},
     "VK": {"url": "https://vk.com/{}", "category": "social"},
-    "OK.ru": {"url": "https://ok.ru/profile/{}", "category": "social"},
-    "Medium": {"url": "https://medium.com/@{}", "category": "social"},
-    "Behance": {"url": "https://www.behance.net/{}", "category": "social"},
+    "OK.ru": {"url": "https://ok.ru/{}", "category": "social"},
+#    "Medium": {"url": "https://medium.com/@{}", "category": "social"},
+    "Behance": {"url": "https://www.behance.net/{}", "category": "social"}, #FLAGED FOR GETTING 200 ON ANOTHER SITE
     "Flickr": {"url": "https://www.flickr.com/people/{}", "category": "social"},
+    "Tumblr": {"url": "https://www.tumbler.com/{}", "category": "social"},
 
     "Steam": {"url": "https://steamcommunity.com/id/{}", "category": "gaming"},
     "Xbox": {"url": "https://xboxgamertag.com/search/{}", "category": "gaming"},
     "PlayStation": {"url": "https://psnprofiles.com/{}", "category": "gaming"},
     "Roblox": {"url": "https://www.roblox.com/users/profile?username={}", "category": "gaming"},
     "Epic Games": {"url": "https://www.epicgames.com/account/personal?username={}", "category": "gaming"},
-    "Riot Games": {"url": "https://www.op.gg/summoners/search/userName={}", "category": "gaming"},
+    "Riot Games": {"url": "https://www.op.gg/summoners/na/{}", "category": "gaming"},
     "Battle.net": {"url": "https://battle.net/account/management/{}", "category": "gaming"},
     "Minecraft": {"url": "https://namemc.com/profile/{}", "category": "gaming"},
-    "Fortnite Tracker": {"url": "https://fortnitetracker.com/profile/all/{}", "category": "gaming"},
+    "Fortnite Tracker": {"url": "https://fortnitetracker.com/profile/all/{}", "category": "gaming"}, #403 Error
     "Itch.io": {"url": "https://{}.itch.io", "category": "gaming"},
     "Faceit": {"url": "https://www.faceit.com/en/players/{}", "category": "gaming"},
     "Tracker.gg": {"url": "https://tracker.gg/profile/{}", "category": "gaming"},
@@ -45,8 +46,8 @@ SITES = {
 
     "GitHub": {"url": "https://github.com/{}", "category": "programming"},
     "GitLab": {"url": "https://gitlab.com/{}", "category": "programming"},
-    "Bitbucket": {"url": "https://bitbucket.org/{}", "category": "programming"},
-    "StackOverflow": {"url": "https://stackoverflow.com/users/{}", "category": "programming"},
+#    "Bitbucket": {"url": "https://bitbucket.org/{}", "category": "programming"}, #Needs sperate way to find account
+#    "StackOverflow": {"url": "https://stackoverflow.com/users/{}", "category": "programming"}, #Creates Random Numbers In User Profile
     "Dev.to": {"url": "https://dev.to/{}", "category": "programming"},
     "HackerRank": {"url": "https://www.hackerrank.com/{}", "category": "programming"},
     "LeetCode": {"url": "https://leetcode.com/{}", "category": "programming"},
@@ -57,7 +58,7 @@ SITES = {
     "CodeChef": {"url": "https://www.codechef.com/users/{}", "category": "programming"},
     "AtCoder": {"url": "https://atcoder.jp/users/{}", "category": "programming"},
     "TopCoder": {"url": "https://www.topcoder.com/members/{}", "category": "programming"},
-    "SourceForge": {"url": "https://sourceforge.net/u/{}", "category": "programming"},
+    "SourceForge": {"url": "https://sourceforge.net/u/{}/profile", "category": "programming"}, #FLAGED FOR GETTING 200 ON ANOTHER SITE
     "PyPI": {"url": "https://pypi.org/user/{}", "category": "programming"},
     "npm": {"url": "https://www.npmjs.com/~{}", "category": "programming"},
     "Gitpod": {"url": "https://gitpod.io/@{}", "category": "programming"},
@@ -136,14 +137,14 @@ SITES = {
 
 
 #   "Template" {"url": " ", "category": "adult"}
-    "PornHub Model": {"url": "https://www.pornhub.com/model/{}", "category": "adult"},
-    "PornHub PornStar": {"url": "https://www.pornhub.com/pornstar/{} ", "category": "adult"},
-    "PornHub User": {"url": "https://www.pornhub.com/users/{} ", "category": "adult"},
-    "Xvideos Model": {"url": "https://www.xvideos.com/models/{} ", "category": "adult"},
-    "Xvideos Channel": {"url": "https://www.xvideos.com/{} ", "category": "adult"},
-    "Xvideos User": {"url": "https://www.xvideos.com/profiles/{} ", "category": "adult"},
-    "xHampster Creator": {"url": "https://xhamster.com/creators/{} ", "category": "adult"},
-    "xHampster Channel": {"url": "https://xhamster.com/channels/{} ", "category": "adult"},
-    "xHampster User": {"url": "https://xhamster.com/users/profiles/{} ", "category": "adult"}
+#    "PornHub Model": {"url": "https://www.pornhub.com/model/{}", "category": "adult"},
+ #   "PornHub PornStar": {"url": "https://www.pornhub.com/pornstar/{} ", "category": "adult"},
+  #  "PornHub User": {"url": "https://www.pornhub.com/users/{} ", "category": "adult"},
+#    "Xvideos Model": {"url": "https://www.xvideos.com/models/{} ", "category": "adult"},
+#    "Xvideos Channel": {"url": "https://www.xvideos.com/{} ", "category": "adult"},
+#    "Xvideos User": {"url": "https://www.xvideos.com/profiles/{} ", "category": "adult"},
+#    "xHampster Creator": {"url": "https://xhamster.com/creators/{} ", "category": "adult"},
+#    "xHampster Channel": {"url": "https://xhamster.com/channels/{} ", "category": "adult"},
+#    "xHampster User": {"url": "https://xhamster.com/users/profiles/{} ", "category": "adult"}
 
 }

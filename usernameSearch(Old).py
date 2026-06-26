@@ -20,16 +20,6 @@ ORANGE = "\033[38;5;208m"
 PURPLE = "\033[35m"
 RESET = "\033[0m"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-CH-UA": '"Chromium";v="116", "Not)A;Brand";v="24"',
-    "Sec-CH-UA-Platform": '"Windows"'
-}
-
 def clear():
         os.system("clear")
 
@@ -59,9 +49,8 @@ def show_menu():
 	print("|  (1) - Normal Search                     |")
 	print("|  (2) - Search by Category                |")
 #	print("|  (3) - Search by Website                 |")
-	print("|  (3) - Databreach Scan                   |")
-	print("|  (4) - Advanced  Scan                    |")
-	print("|  (5) - Help                              |")
+	print("|  (3) - Advanced  Scan                    |")
+	print("|  (4) - Help                              |")
 	print()
 
 def menu():
@@ -163,7 +152,7 @@ def category_search():
 		url = site_data["url"].format(username)
 
 		try:
-			response = requests.get(url, headers=HEADERS, timeout=5)
+			response = requests.get(url, timeout=5)
 
 			if response.status_code == 200:
 				username_exists_counter += 1
@@ -221,7 +210,7 @@ def username_scanner():
 		url = site_data["url"].format(username)
 
 		try:
-			response = requests.get(url, headers=HEADERS, timeout=5)
+			response = requests.get(url, timeout=5)
 
 			if response.status_code == 200:
 				results[category].append({

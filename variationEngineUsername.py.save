@@ -1,0 +1,49 @@
+from difflib import SequenceMatcher
+
+def welcome_variation(
+	numeric_variation_until = input
+
+def add_variation(variation, username, var_type):
+	if username in [v["username"] for v in variation]:
+		return
+
+	similarity = SequenceMatcher(
+		None,
+		username,
+		variations[0]["original']
+	).ration()
+
+	score = int(similarity * 100)
+
+	variations.append({
+		"username": username,
+		"type": var_type,
+		"score": score
+	})
+
+def generate_variations(username):
+	variations = [{
+		"original": username
+	}]
+
+	# ------------------------------#
+	# Seperator variations
+	# ------------------------------#
+
+	add_variation(
+		variations,
+		username.replace("", "_")[1:-1]
+
+	add_variation(
+		variations,
+		username.replace("", "-")[1:-1]
+		"seperator"
+	)
+
+	add_variation(
+		variations,
+		username.replace("", ".")[1:-1]
+
+        # ------------------------------#
+        # Numeric variations
+        # ------------------------------#
