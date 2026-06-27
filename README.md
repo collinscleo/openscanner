@@ -3,7 +3,7 @@
 
 Prerequasites
 
-Please install: XposedOrNot, phonenumbers
+Please install: XposedOrNot, phonenumbers, ipwhois
 
 Create and activate the virtual environment
 
@@ -13,6 +13,7 @@ Create and activate the virtual environment
 Install the packages
 `pip install xposedornot`
 `pip install phonenumbers`
+`pip install ipwhois`
 
 # Now run your Python script
 `python3 my_script.py`
